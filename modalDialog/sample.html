@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>ページタイトル</title>
+    <!-- このページに必要なCSSやJavaScriptのリンクなどを追加 -->
+    <script>
+function openDialog(title, content, width, height) {
+  // ダイアログを作成
+  var dialog = $('<div></div>')
+    .html(content)
+    .dialog({
+      autoOpen: false,
+      title: title,
+      width: width,
+      height: height,
+      modal: true,
+      buttons: {
+        "閉じる": function() {
+          $(this).dialog("close");
+        }
+      }
+    });
+  
+  // ダイアログを開く
+  dialog.dialog('open');
+}
+    </script>
+<!-- jQueryのスクリプトを読み込み -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- jQuery UIのスクリプトを読み込み -->
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+
+<!-- jQuery UIのスタイルを読み込み -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">メニュー1</a></li>
+          <li><a href="#">メニュー2</a></li>
+          <li><a href="#">メニュー3</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- メインコンテンツ -->
+    <main>
+      <section>
+        <h1>セクションタイトル</h1>
+        <p>セクションの説明</p>
+        <!-- セクションのコンテンツをここに追加 -->
+<input type="button" onclick="openDialog('サンプルダイアログ', '<p>ダイアログの内容をここに記述します。</p>', 400, 300);"/>
+      </section>
+      <section>
+        <h1>別のセクションタイトル</h1>
+        <p>別のセクションの説明</p>
+        <!-- 別のセクションのコンテンツをここに追加 -->
+      </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+      <p>著作権情報などをここに追加</p>
+    </footer>
+    
+    <!-- このページに必要なJavaScriptをここに追加 -->
+  </body>
+</html>

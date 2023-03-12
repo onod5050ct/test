@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h2>Index</h2>
+	<form>
+		<label for="selectedId">Selected ID:</label>
+		<input type="text" id="selectedId" name="selectedId">
+	</form>
+	<button id="openDialogButton">Open Dialog</button>
+	<script src="./js/jquery-3.6.0.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script>
+		$(function() {
+			$('#openDialogButton').click(function() {
+				openDialog('List', './list.html', 600, 400, function(selectedId) {
+					$('#selectedId').val(selectedId);
+				});
+			});
+		});
+
+		function openDialog(title, url, width, height, callback) {
+			var dialog = $('<div></div>')
+				.load(url)
+				.dialog({
+					autoOpen: false,
+					title: title,
+					width: width,
+					height: height,
+					modal: true,
+					buttons: {
+						"閉じる": function() {
+							$(this).dialog("close");
+						}
+					},
+					close: function() {
+						callback(sessionStorage.getItem('selectedId'));
+					}
+				});
+			dialog.dialog('open');
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listうんこうんこ</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h2>Listうんこ</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Alice</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Bob</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="./js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function() {
+			$('table tbody tr').click(function() {
+				var selectedId = $(this).find('td:first-child').text();
+				window.location.href = 'return.jsp?id=' + selectedId;
+			});
+		});
+	</script>
+</body>
+</html>

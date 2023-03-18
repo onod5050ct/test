@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自治体公式アプリ</title>
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/static/css/all.min.css">
+    <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="/lgoApp/main/">〇〇町 公式アプリ</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/consulReserve">相談予約</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/ivent/">イベント情報</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/kouhou/">広報</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/bousai/">防災情報</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/garbage/">ごみ収集</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="検索" aria-label="検索">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+			</form>
+		</div>
+	</nav>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center main-row">
+      <div class="col-md-6">
+        <img src="img/logo.png" alt="Logo" class="img-fluid mx-auto d-block">
+        <h1 class="text-center mt-3">〇〇町公式アプリ</h1>
+        <div class="row mt-4">
+          <div class="col">
+            <a href="/lgoApp/consulReserve/" class="btn btn-primary btn-block"><i class="fas fa-user-friends"></i> 相談予約</a>
+          </div>
+          <div class="col">
+            <a href="/lgoApp/ivent/" class="btn btn-secondary btn-block"><i class="far fa-calendar-alt"></i> イベント情報</a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <a href="/lgoApp/kouhou/" class="btn btn-info btn-block"><i class="fas fa-newspaper"></i> 広報</a>
+          </div>
+          <div class="col">
+            <a href="/lgoApp/bousai/" class="btn btn-success btn-block"><i class="fas fa-exclamation-triangle"></i> 防災情報</a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <a href="/lgoApp/garbage/" class="btn btn-warning btn-block"><i class="fas fa-trash"></i> ごみ収集</a>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+      <p class="text-center">&nbsp&copy; 2023 〇〇町</p>
+  </footer>
+    <script src="/static/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
+</html>

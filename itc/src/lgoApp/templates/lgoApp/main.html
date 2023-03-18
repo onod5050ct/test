@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>〇〇町 公式アプリ</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">-->
+	<link rel="stylesheet" href="/static/css/all.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/static/styles.css">
+	<style>
+	.header-image {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	  }
+	  
+	  .container {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	  }
+	</style>
+</head>
+<body>
+	<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">〇〇町 公式アプリ</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/consulReserve">相談予約</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/ivent/">イベント情報</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/kouhou/">広報</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/bousai/">防災情報</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/lgoApp/garbage/">ごみ収集</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="検索" aria-label="検索">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+			</form>
+		</div>
+	</nav>
+	
+	<!-- Header Image -->
+	<div class="header-image">
+		<a href="/lgoApp/menu/"><img src="/static/sanshokusoba.jpg" alt="Header Image"></a>
+	</div>
+
+	<!-- Main Content -->
+	<div class="container">
+		<h4>お知らせ</h4>
+		<p>・令和5年度予算説明書等を公表しました。（3月6日）</p>
+        <p>・「マイナポイントお手伝い窓口」の予約について（3月6日）</p>
+        <p>・「火の用心だより」最新号を発行しました（3月6日）</p>
+        <p>・寄附のご案内（消防局）（3月6日）</p>
+	</div>
+	
+	<!-- Bootstrap JS -->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/popper.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>

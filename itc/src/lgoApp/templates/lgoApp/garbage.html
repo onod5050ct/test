@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ゴミ収集予定</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<style>
+		.container {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.table th, .table td {
+			padding: .75rem;
+			vertical-align: top;
+			border-top: 1px solid #dee2e6;
+		}
+	</style>
+</head>
+<body>
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/lgoApp/main/">ゴミ収集</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/consulReserve/">相談予約</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/ivent/">イベント情報</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/kouhou/">広報</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/bousai/">防災</a>
+        </li>
+		<!--
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/garbage/">ゴミ収集</a>
+        </li>
+		-->
+      </ul>
+    </div>
+  </nav>
+	<div class="container">
+		<h1>ゴミ収集予定</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>日付</th>
+					<th>曜日</th>
+					<th>可燃ごみ</th>
+					<th>資源ごみ</th>
+					<th>粗大ごみ</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>3/1</td>
+					<td>火</td>
+					<td>○</td>
+					<td>×</td>
+					<td>×</td>
+				</tr>
+				<tr>
+					<td>3/2</td>
+					<td>水</td>
+					<td>×</td>
+					<td>○</td>
+					<td>×</td>
+				</tr>
+				<tr>
+					<td>3/3</td>
+					<td>木</td>
+					<td>○</td>
+					<td>×</td>
+					<td>×</td>
+				</tr>
+				<tr>
+					<td>3/4</td>
+					<td>金</td>
+					<td>×</td>
+					<td>×</td>
+					<td>○</td>
+				</tr>
+				<tr>
+					<td>3/5</td>
+					<td>土</td>
+					<td>×</td>
+					<td>○</td>
+					<td>×</td>
+				</tr>
+				<tr>
+					<td>3/6</td>
+					<td>日</td>
+					<td>○</td>
+					<td>×</td>
+					<td>×</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    <!-- jQueryとBootstrapのJavaScriptライブラリを読み込む -->
+    <script src="/static/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PDF Viewer</title>
+	<style>
+#pdf {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+	</style>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/lgoApp/main/">広報</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/consulReserve/">相談予約</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/ivent/">イベント情報</a>
+        </li>
+		<!--
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/kouhou/">広報</a>
+        </li>
+		-->
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/bousai/">防災</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/lgoApp/garbage/">ゴミ収集</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <embed id="pdf" src="/static/kouhou.pdf" width="100%" height="100%" type="application/pdf">
+    <!-- jQueryとBootstrapのJavaScriptライブラリを読み込む -->
+    <script src="/static/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>
